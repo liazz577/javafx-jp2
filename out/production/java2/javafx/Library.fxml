@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="58.0" layoutY="154.0" mnemonicParsing="false" text="Books" />
+      <Button layoutX="239.0" layoutY="154.0" mnemonicParsing="false" text="Members" />
+      <Button layoutX="422.0" layoutY="154.0" mnemonicParsing="false" text="Books rental" />
+      <Text layoutX="239.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

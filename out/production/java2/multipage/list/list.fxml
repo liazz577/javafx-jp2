@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multipage.list.Controller">
+   <children>
+      <ListView fx:id="lv" layoutX="25.0" layoutY="63.0" prefHeight="275.0" prefWidth="551.0" />
+      <Button layoutX="466.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToForm" prefHeight="27.0" prefWidth="109.0" text="Add a Subject" />
+      <Button onAction="#edit" layoutX="25.0" layoutY="27.0" mnemonicParsing="false" text="Edit Item" />
+   </children>
+</Pane>
