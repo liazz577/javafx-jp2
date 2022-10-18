@@ -1,4 +1,4 @@
-package Session1;
+package session1;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -19,13 +19,15 @@ public class Main {
         numbers.add(4);
         numbers.add(2);
         numbers.add(1);
-        System.out.println("Numbers: "+numbers );
+        System.out.println("Numbers: "+numbers);
+
         int first = numbers.peek();
         System.out.println("first: "+first);
-        System.out.println("Total: "+numbers.size());
-        System.out.println("Poll: "+numbers.poll()+"remain: "+numbers.size());
-        System.out.println("Poll: "+numbers.poll()+"remain: "+numbers.size());
-        System.out.println("Poll: "+numbers.poll()+"remain: "+numbers.size());
+        System.out.println("Total: "+ numbers.size());
+
+        System.out.println("Poll:"+numbers.poll()+" remain:"+numbers.size());
+        System.out.println("Poll:"+numbers.poll()+" remain:"+numbers.size());
+        System.out.println("Poll:"+numbers.poll()+" remain:"+numbers.size());
 
         PriorityQueue<Student> st = new PriorityQueue<>(new Comparator<Student>() {
             @Override
@@ -38,13 +40,16 @@ public class Main {
         st.add(new Student("Trần Văn Thành",2));
         st.add(new Student("Hà Hoàng Hưng",0));
         Student s;
-        while ((s=st.poll()) != null) {
-            System.out.println("SV: "+s.getName()+", Điểm thi: "+s.getMark());
+        while(st.size() > 0){
+            s = st.poll();
+           System.out.println("SV: "+s.getName()+" Điểm thi:"+s.getMark());
         }
-        HashMap<String, Integer> hm = new HashMap<>();
+
+        HashMap<String,Integer> hm = new HashMap<>();
         hm.put("good_student",10);
         hm.put("bad_student",3);
-        System.out.println("Sinh vien xuat sac, diem thi dat: "+hm.get("good_student"));
+        System.out.println("Tieu chuẩn làm sinh viên xuất sắc là điểm thi phải đạt:"
+                +hm.get("good_student"));
         System.out.println(hm.keySet());
         System.out.println(hm.values());
     }

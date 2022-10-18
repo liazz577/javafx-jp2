@@ -1,11 +1,8 @@
-package Session1;
+package session1;
 
 public class Student {
     private String name;
     private Integer mark;
-
-    public Student() {
-    }
 
     public Student(String name, Integer mark) {
         this.name = name;
